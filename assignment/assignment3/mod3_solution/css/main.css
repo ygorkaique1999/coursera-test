@@ -3,7 +3,11 @@ h1 {
 	padding: 10px;
 	font-weight: bold;
 }
-
+h1#nomeEmpresa{
+	padding-top: 25px;
+	clear: both;
+	font-size: 8vw;
+}
 #header-nav {
 	background-color: lightblue;
 	border-radius: 0;
@@ -18,11 +22,9 @@ h3 {
 	font-weight: bold;
 	text-align: center;
 }
-div.content{
-	margin: 20px; 
-}
+
 div {
-	background-color: lightblue;
+	padding: -10px;
 	box-sizing: border-box;
 	float: left;
 	align-content: center;
@@ -36,24 +38,40 @@ button {
 header {
 	background-color: lightblue;
 	margin-bottom: 20px;
-	float: left;
 	width: 100%;
+}
+
+#nav-list {
+	margin-top: 10px;
 }
 
 #navbarToggleExternalContent {
 	background-color: lightblue;
 	text-decoration: none;
 	width: 100%;
-	
+	min-width: 310px;
 }
-a:hover{
+
+a:hover {
 	text-decoration: none;
 	color: black;
 }
-li{
+
+li {
 	font-size: 1.5em;
 	text-align: center;
 }
-li:hover{
+
+li:hover {
 	background: #E7E7E7;
+}
+
+.content {
+	padding: 1%;
+}
+
+section {
+	padding: 10px;
+	background-color: lightblue;
+	border: 1px solid lightblue;
 }
