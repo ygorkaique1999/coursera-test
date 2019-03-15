@@ -4,56 +4,164 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Boostrap Starter Page</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
+
   <header>
-    <nav class="navbar navbar-default" id="header-nav">
+    <nav class="navbar navbar-dark">
       <div class="navbar-header">
         <h1>Food, LLC</h1>
       </div>
+      <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse"
+        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent">
+      <ul id="nav-list" class="nav navbar-nav navbar-right">
+        <a href="#content01">
+          <li>
+            <span class="glyphicon glyphicon-cutlery">Chicken</span><br class="hidden-xs">
+          </li>
+        </a>
+        <a href="#content02">
+          <li>
+            <span class="glyphicon glyphicon-info-sign">Beef</span><br class="hidden-xs">
+          </li>
+        </a>
+        <a href="#content03">
+          <li>
+            <span class="glyphicon glyphicon-certificate">Sushi</span><br class="hidden-xs">
+          </li>
+        </a>
+      </ul>
+    </div>
   </header>
+
   <h1 class="title">Our Menu</h1>
-  <div class="col-md-4 col-sm-6">
-    <h3 class="content01">Chicken</h3>
-    <p> Lorem Ipsum é simplesmente texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem
-      sido o texto fictício padrão da indústria desde os anos 1500, quando uma impressora desconhecida pegou
-      uma galé do tipo e subiu para fazer um livro de espécimes de tipo. Ele sobreviveu não apenas cinco
-      séculos, mas também o salto para a composição eletrônica, permanecendo essencialmente inalterado.
-      Foi popularizado nos anos 60 com o lançamento de folhas de Letraset contendo passagens de Lorem Ipsum,
-      e mais recentemente com software de editoração eletrônica como Aldus PageMaker incluindo versões de
-      Lorem Ipsum.</p>
+
+  <div class="col-md-12 col-sm-6 content">
+    <h3 class="content01" id="content01">Chicken</h3>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu, tincidunt in tellus ut,
+      tristique euismod tortor. Fusce nec diam dui. Nulla facilisi. Praesent vulputate vehicula lobortis.
+      Nullam gravida gravida magna non dignissim. Vestibulum luctus lorem non erat congue, sit amet facilisis
+      nibh auctor. Vestibulum elementum ex tellus, vitae maximus dui tristique sed. Nunc mattis eleifend tortor
+      vitae euismod. Sed nec faucibus lacus. Praesent vel tincidunt mauris, id aliquam elit. Suspendisse in purus
+      et magna venenatis volutpat in a libero.</p>
+    <p> Cras euismod ullamcorper tortor at tincidunt. Sed cursus, ligula sit amet vehicula accumsan, orci enim
+      finibus risus, vel imperdiet arcu lectus sit amet eros. Ut molestie, augue non gravida ullamcorper, urna
+      mauris mollis lorem, vel accumsan justo arcu sed metus. Vivamus et lorem tincidunt, elementum nunc non,
+      efficitur dui. Nulla sed cursus velit. Integer rutrum lacinia enim sed dictum. Phasellus vel dui dignissim,
+      consequat massa non, eleifend velit. Nam congue ipsum sed nibh commodo, ac rhoncus diam placerat.
+      Fusce porta felis non aliquam ullamcorper.</p>
+    <p> Sed imperdiet cursus ultrices. Quisque viverra est odio, ut tincidunt diam pharetra id. Fusce ut dui
+      sodales, eleifend lorem ut, congue nunc. Pellentesque suscipit mattis velit, et malesuada mi dictum ac.
+      Morbi bibendum ex sed lectus egestas, ac accumsan mi lacinia. Fusce justo dolor, vehicula et dapibus at,
+      gravida eu ipsum. Praesent placerat lacinia nisl. Nullam accumsan sapien nec purus pulvinar varius.
+      Sed ut facilisis est. Phasellus ligula est, aliquet a suscipit porttitor, viverra ac lorem. Proin tempus
+      scelerisque tellus non blandit. Vivamus ultrices tortor eget ipsum luctus elementum. Phasellus cursus
+      nisi nulla, sit amet dapibus massa luctus vel. Nulla consectetur mi et nibh luctus, vel tincidunt leo
+      maximus.</p>
+    <p>Morbi malesuada ex et efficitur dictum. Integer laoreet malesuada aliquam. Fusce at tempus est,
+      quis interdum ante. Mauris elementum eleifend interdum. Vestibulum commodo mi eu malesuada tempor.
+      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam a purus
+      sem. In aliquam sollicitudin est, quis venenatis sem suscipit a. Integer et aliquet ligula. Duis eu nisl
+      sollicitudin, porttitor tortor sed, tincidunt massa. Maecenas pellentesque id tortor at tincidunt. Proin id lorem
+      diam.</p>
+    <p>Vestibulum ullamcorper ut magna in volutpat. Aliquam commodo consequat blandit. Suspendisse vitae
+      posuere diam. Donec posuere a tortor et pellentesque. Aenean id tortor quis sem pharetra suscipit.
+      Nulla vitae molestie massa. Curabitur eu quam diam. Nunc nec ipsum interdum, dignissim velit quis,
+      sagittis diam. Quisque in tortor euismod, porta elit vitae, malesuada neque. Nullam ultrices malesuada
+      fermentum. Pellentesque at tempor augue, eu maximus elit. Sed aliquet tincidunt nunc sed laoreet.</p>
   </div>
-  <div class="col-md-4 col-sm-6">
-    <h3 class="content03">Beef</h3>
-    <p> Lorem Ipsum é simplesmente texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem
-      sido o texto fictício padrão da indústria desde os anos 1500, quando uma impressora desconhecida pegou
-      uma galé do tipo e subiu para fazer um livro de espécimes de tipo. Ele sobreviveu não apenas cinco
-      séculos, mas também o salto para a composição eletrônica, permanecendo essencialmente inalterado.
-      Foi popularizado nos anos 60 com o lançamento de folhas de Letraset contendo passagens de Lorem Ipsum,
-      e mais recentemente com software de editoração eletrônica como Aldus PageMaker incluindo versões de
-      Lorem Ipsum.</p>
+
+  <div class="col-md-12 col-sm-6 content">
+    <h3 class="content02" id="content02">Beef</h3>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu, tincidunt in tellus ut,
+      tristique euismod tortor. Fusce nec diam dui. Nulla facilisi. Praesent vulputate vehicula lobortis.
+      Nullam gravida gravida magna non dignissim. Vestibulum luctus lorem non erat congue, sit amet facilisis
+      nibh auctor. Vestibulum elementum ex tellus, vitae maximus dui tristique sed. Nunc mattis eleifend tortor
+      vitae euismod. Sed nec faucibus lacus. Praesent vel tincidunt mauris, id aliquam elit. Suspendisse in purus
+      et magna venenatis volutpat in a libero.</p>
+    <p> Cras euismod ullamcorper tortor at tincidunt. Sed cursus, ligula sit amet vehicula accumsan, orci enim
+      finibus risus, vel imperdiet arcu lectus sit amet eros. Ut molestie, augue non gravida ullamcorper, urna
+      mauris mollis lorem, vel accumsan justo arcu sed metus. Vivamus et lorem tincidunt, elementum nunc non,
+      efficitur dui. Nulla sed cursus velit. Integer rutrum lacinia enim sed dictum. Phasellus vel dui dignissim,
+      consequat massa non, eleifend velit. Nam congue ipsum sed nibh commodo, ac rhoncus diam placerat.
+      Fusce porta felis non aliquam ullamcorper.</p>
+    <p> Sed imperdiet cursus ultrices. Quisque viverra est odio, ut tincidunt diam pharetra id. Fusce ut dui
+      sodales, eleifend lorem ut, congue nunc. Pellentesque suscipit mattis velit, et malesuada mi dictum ac.
+      Morbi bibendum ex sed lectus egestas, ac accumsan mi lacinia. Fusce justo dolor, vehicula et dapibus at,
+      gravida eu ipsum. Praesent placerat lacinia nisl. Nullam accumsan sapien nec purus pulvinar varius.
+      Sed ut facilisis est. Phasellus ligula est, aliquet a suscipit porttitor, viverra ac lorem. Proin tempus
+      scelerisque tellus non blandit. Vivamus ultrices tortor eget ipsum luctus elementum. Phasellus cursus
+      nisi nulla, sit amet dapibus massa luctus vel. Nulla consectetur mi et nibh luctus, vel tincidunt leo
+      maximus.</p>
+    <p>Morbi malesuada ex et efficitur dictum. Integer laoreet malesuada aliquam. Fusce at tempus est,
+      quis interdum ante. Mauris elementum eleifend interdum. Vestibulum commodo mi eu malesuada tempor.
+      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam a purus
+      sem. In aliquam sollicitudin est, quis venenatis sem suscipit a. Integer et aliquet ligula. Duis eu nisl
+      sollicitudin, porttitor tortor sed, tincidunt massa. Maecenas pellentesque id tortor at tincidunt. Proin id lorem
+      diam.</p>
+    <p>Vestibulum ullamcorper ut magna in volutpat. Aliquam commodo consequat blandit. Suspendisse vitae
+      posuere diam. Donec posuere a tortor et pellentesque. Aenean id tortor quis sem pharetra suscipit.
+      Nulla vitae molestie massa. Curabitur eu quam diam. Nunc nec ipsum interdum, dignissim velit quis,
+      sagittis diam. Quisque in tortor euismod, porta elit vitae, malesuada neque. Nullam ultrices malesuada
+      fermentum. Pellentesque at tempor augue, eu maximus elit. Sed aliquet tincidunt nunc sed laoreet.</p>
   </div>
-  <div class="item03">
-    <h3 class="col-md-4 col-sm-6">Sushi</h3>
-    <p> Lorem Ipsum é simplesmente texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem
-      sido o texto fictício padrão da indústria desde os anos 1500, quando uma impressora desconhecida pegou
-      uma galé do tipo e subiu para fazer um livro de espécimes de tipo. Ele sobreviveu não apenas cinco
-      séculos, mas também o salto para a composição eletrônica, permanecendo essencialmente inalterado.
-      Foi popularizado nos anos 60 com o lançamento de folhas de Letraset contendo passagens de Lorem Ipsum,
-      e mais recentemente com software de editoração eletrônica como Aldus PageMaker incluindo versões de
-      Lorem Ipsum.</p>
+
+  <div class="col-md-12 col-sm-6 content">
+    <h3 class="content03" id="content03">Sushi</h3>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu, tincidunt in tellus ut,
+      tristique euismod tortor. Fusce nec diam dui. Nulla facilisi. Praesent vulputate vehicula lobortis.
+      Nullam gravida gravida magna non dignissim. Vestibulum luctus lorem non erat congue, sit amet facilisis
+      nibh auctor. Vestibulum elementum ex tellus, vitae maximus dui tristique sed. Nunc mattis eleifend tortor
+      vitae euismod. Sed nec faucibus lacus. Praesent vel tincidunt mauris, id aliquam elit. Suspendisse in purus
+      et magna venenatis volutpat in a libero.</p>
+    <p> Cras euismod ullamcorper tortor at tincidunt. Sed cursus, ligula sit amet vehicula accumsan, orci enim
+      finibus risus, vel imperdiet arcu lectus sit amet eros. Ut molestie, augue non gravida ullamcorper, urna
+      mauris mollis lorem, vel accumsan justo arcu sed metus. Vivamus et lorem tincidunt, elementum nunc non,
+      efficitur dui. Nulla sed cursus velit. Integer rutrum lacinia enim sed dictum. Phasellus vel dui dignissim,
+      consequat massa non, eleifend velit. Nam congue ipsum sed nibh commodo, ac rhoncus diam placerat.
+      Fusce porta felis non aliquam ullamcorper.</p>
+    <p> Sed imperdiet cursus ultrices. Quisque viverra est odio, ut tincidunt diam pharetra id. Fusce ut dui
+      sodales, eleifend lorem ut, congue nunc. Pellentesque suscipit mattis velit, et malesuada mi dictum ac.
+      Morbi bibendum ex sed lectus egestas, ac accumsan mi lacinia. Fusce justo dolor, vehicula et dapibus at,
+      gravida eu ipsum. Praesent placerat lacinia nisl. Nullam accumsan sapien nec purus pulvinar varius.
+      Sed ut facilisis est. Phasellus ligula est, aliquet a suscipit porttitor, viverra ac lorem. Proin tempus
+      scelerisque tellus non blandit. Vivamus ultrices tortor eget ipsum luctus elementum. Phasellus cursus
+      nisi nulla, sit amet dapibus massa luctus vel. Nulla consectetur mi et nibh luctus, vel tincidunt leo
+      maximus.</p>
+    <p>Morbi malesuada ex et efficitur dictum. Integer laoreet malesuada aliquam. Fusce at tempus est,
+      quis interdum ante. Mauris elementum eleifend interdum. Vestibulum commodo mi eu malesuada tempor.
+      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam a purus
+      sem. In aliquam sollicitudin est, quis venenatis sem suscipit a. Integer et aliquet ligula. Duis eu nisl
+      sollicitudin, porttitor tortor sed, tincidunt massa. Maecenas pellentesque id tortor at tincidunt. Proin id lorem
+      diam.</p>
+    <p>Vestibulum ullamcorper ut magna in volutpat. Aliquam commodo consequat blandit. Suspendisse vitae
+      posuere diam. Donec posuere a tortor et pellentesque. Aenean id tortor quis sem pharetra suscipit.
+      Nulla vitae molestie massa. Curabitur eu quam diam. Nunc nec ipsum interdum, dignissim velit quis,
+      sagittis diam. Quisque in tortor euismod, porta elit vitae, malesuada neque. Nullam ultrices malesuada
+      fermentum. Pellentesque at tempor augue, eu maximus elit. Sed aliquet tincidunt nunc sed laoreet.</p>
   </div>
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

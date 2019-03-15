@@ -1,0 +1,59 @@
+h1 {
+	text-align: left;
+	padding: 10px;
+	font-weight: bold;
+}
+
+#header-nav {
+	background-color: lightblue;
+	border-radius: 0;
+	border: 0;
+}
+
+h1.title {
+	text-align: center;
+}
+
+h3 {
+	font-weight: bold;
+	text-align: center;
+}
+div.content{
+	margin: 20px; 
+}
+div {
+	background-color: lightblue;
+	box-sizing: border-box;
+	float: left;
+	align-content: center;
+}
+
+button {
+	color: black;
+	border: 1px solid blue;
+}
+
+header {
+	background-color: lightblue;
+	margin-bottom: 20px;
+	float: left;
+	width: 100%;
+}
+
+#navbarToggleExternalContent {
+	background-color: lightblue;
+	text-decoration: none;
+	width: 100%;
+	
+}
+a:hover{
+	text-decoration: none;
+	color: black;
+}
+li{
+	font-size: 1.5em;
+	text-align: center;
+}
+li:hover{
+	background: #E7E7E7;
+}
