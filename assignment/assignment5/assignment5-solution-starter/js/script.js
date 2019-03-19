@@ -84,8 +84,8 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
     $ajaxUtils.sendGetRequest(
       allCategoriesUrl,
       function (response) {
-        buildAndShowHomeHTML(response);
-        document.querySelector("#main-content").innerHTML = response;
+        var resposta = buildAndShowHomeHTML(response);
+        document.querySelector("#main-content").innerHTML = resposta;
       }, // ***** <---- TODO: STEP 1: Substitute [...] ******
       false); // Explicitely setting the flag to get JSON from server processed into an object literal
   });
@@ -135,6 +135,8 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
       },
       false);
+
+      return chosenCategoryShortName;
   }
 
 /* for (var i = 0; i < categories.length; i++) {
