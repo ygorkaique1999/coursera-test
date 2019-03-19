@@ -85,6 +85,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
       allCategoriesUrl,
       function (response) {
         document.querySelector("#main-content").innerHTML = response;
+        buildAndShowHomeHTML(response);
       }, // ***** <---- TODO: STEP 1: Substitute [...] ******
       false); // Explicitely setting the flag to get JSON from server processed into an object literal
   });
