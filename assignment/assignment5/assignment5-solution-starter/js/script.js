@@ -124,23 +124,13 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
         // ....
         insertHtml("#main-content", insertHome);
       },
-      false);        // False here because we are getting just regular HTML from the server, so no need to process JSON.
+      false);      
+        // False here because we are getting just regular HTML from the server, so no need to process JSON.
 
   }
 
-  /* for (var i = 0; i < categories.length; i++) {
-        // Insert category values
-        var html = categoryHtml;
-        var name = "" + categories[i].name;
-        var short_name = categories[i].short_name;
-        html =
-          insertProperty(html, "name", name);
-        html =
-          insertProperty(html,
-            "short_name",
-            short_name);
-        finalHtml += html;
-      }*/
+
+  
   // Given array of category objects, returns a random category object.
   function chooseRandomCategory(categories) {
     // Choose a random index into the array (from 0 inclusively until array length (exclusively))
