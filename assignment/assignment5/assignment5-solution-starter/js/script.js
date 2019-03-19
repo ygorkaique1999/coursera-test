@@ -125,17 +125,13 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
     $ajaxUtils.sendGetRequest(homeHtmlUrl,
 
       function (homeHtmlUrl) {
-        $ajaxUtils.sendGetRequest(homeHtmlUrl,
-          function (homeHtml) {
             var chosenCategoryShortName = chooseRandomCategory(categories);
             insertProperty(homeHtmlUrl, chosenCategoryShortName, categories);
             insertHtml("#main-content", chosenCategoryShortName);
             console.log(categories);
             console.log(homeHtmlUrl);
-            console.log(homeHtml);
             console.log(chosenCategoryShortName);
-            
-          }, false);
+
       },
       false);
   }
