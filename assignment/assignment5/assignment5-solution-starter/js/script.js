@@ -93,11 +93,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
   // Builds HTML for the home page based on categories array
   // returned from the server.
-  function buildAndShowHomeHTML(categories) {
-
-    // Load home snippet page
-    $ajaxUtils.sendGetRequest(homeHtmlUrl,
-
+  
       // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
       // variable's name implies it expects.
@@ -123,18 +119,35 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
       // of how to do that.
       // ....
       // False here because we are getting just regular HTML from the server, so no need to process JSON.
+  function buildAndShowHomeHTML(categories) {
+
+    // Load home snippet page
+    $ajaxUtils.sendGetRequest(homeHtmlUrl,
+
       function (homeHtmlUrl) {
         $ajaxUtils.sendGetRequest(homeHtmlUrl,
           function (homeHtml) {
-            switchMenuToActive();
-            var chosenCategoryShortName = buildCategoriesViewHtml(categories, homeHtml, homeHtmlUrl, chosenCategoryShortName);
+            var chosenCategoryShortName = chooseRandomCategory(categories);
+            insertProperty(homeHtmlUrl, chosenCategoryShortName, categories);
             insertHtml("#main-content", chosenCategoryShortName);
           }, false);
       },
       false);
   }
 
-
+/* for (var i = 0; i < categories.length; i++) {
+      // Insert category values
+      var html = categoryHtml;
+      var name = "" + categories[i].name;
+      var short_name = categories[i].short_name;
+      html =
+        insertProperty(html, "name", name);
+      html =
+        insertProperty(html,
+          "short_name",
+          short_name);
+      finalHtml += html;
+    }*/
   // Given array of category objects, returns a random category object.
   function chooseRandomCategory(categories) {
     // Choose a random index into the array (from 0 inclusively until array length (exclusively))
