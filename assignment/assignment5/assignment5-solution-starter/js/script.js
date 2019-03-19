@@ -86,7 +86,7 @@ $ajaxUtils.sendGetRequest(
   function(response){
     document.querySelector("#main-content").innerHTML = response;
   }, // ***** <---- TODO: STEP 1: Substitute [...] ******
-  true); // Explicitely setting the flag to get JSON from server processed into an object literal
+  false); // Explicitely setting the flag to get JSON from server processed into an object literal
 });
 // *** finish **
 
